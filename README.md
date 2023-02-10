@@ -1,5 +1,5 @@
 # Change Custom Certificate on Openshift Route
-The Script scans the routes present in all the namaspaces, and selects interested routes through two variables `ROUTE_HOST_FILTER` and `CERT_CN_FILTER` appropriately set before execution.
+The Script scans the routes present in all the namaspaces, and selects interested routes through two variables `ROUTE_HOST_FILTER` and `CERT_CN_FILTER` appropriately set before execution. It also creates a folder containing YAML backups of the routes.
 The output of the script is two files, one of reports in CSV format and the other in sh format containing the `patch` commands for the certificate change.
 > **N.B. The script does not change the certificates but only generates the file containing the commands for doing so**
 

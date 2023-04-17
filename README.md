@@ -3,7 +3,8 @@ The Script scans the routes present in all the namaspaces, and selects intereste
 The output of the script is two files, one of reports in CSV format and the other in sh format containing the `patch` commands for the certificate change.
 > **N.B. The script does not change the certificates but only generates the file containing the commands for doing so**
 
-## Predisposizione
+
+## Predisposition
 > **N.B. Before running this script you must run the `oc login` command**
 
 - Clone this git Project:
@@ -21,7 +22,8 @@ The output of the script is two files, one of reports in CSV format and the othe
     ...
   ```
 
-## Ricerca Rotte
+
+## Route Search
 - Run the script:
   ```bash
   ./Change_Route_Cert.sh
@@ -29,6 +31,7 @@ The output of the script is two files, one of reports in CSV format and the othe
   # If you want limited to only ONE namespace:
   ./Change_Route_Cert.sh <NAMESPACE>
   ```
+
 
 ## Patch Routes
 - (**Patch Selective**) Open the ***"Report_routes.csv"*** file and copy the last column of the file containing the *`oc patch`* command for each desired route, put them in a file and run it.
